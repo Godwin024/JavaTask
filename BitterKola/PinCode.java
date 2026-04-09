@@ -11,13 +11,13 @@ public class PinCode{
 
 
 if (pinCodenum >= 1000 && pinCodenum <= 9999){
-System.out.println("Valid Pin");
+System.out.println("VALID PIN");
  
 }
 
 else{
 
-System.out.println("invalid Pin");
+System.out.println("INVALID PIN");
 
 }
 
