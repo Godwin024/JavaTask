@@ -54,7 +54,7 @@ public class Nokiaphone{
               break;
          case 6:  System.out.println("-> Assign tone");
               break;
-         case 7:  System.out.println("-> Sendb b`card");
+         case 7:  System.out.println("-> Send b`card");
               break;
          case 8:  System.out.println("-> Options");
                   System.out.println("1: Type of view");
@@ -91,6 +91,10 @@ public class Nokiaphone{
                   System.out.println("5. Templates");
                   System.out.println("6. Semileys");
                   System.out.println("7. Messages settings");
+                  System.out.println("8. Info service ");
+                  System.out.println("9. Voice mailbox number ");
+                  System.out.println("10. Service command editor");
+     
 
   System.out.println("MESSAGE selection:");
     int messageSelection = input.nextInt();
@@ -135,35 +139,351 @@ public class Nokiaphone{
           default: System.out.println("Invalid"); 
           }
           
-          case 2: System.out.println("->Common");
-                  System.out.println("-> Delivery reports");
-                  System.out.println("-> Reply via same center");
-                  System.out.println("-> character support");
+          case 2: System.out.println("-> Common");
+                  System.out.println(": Delivery reports");
+                  System.out.println(": Reply via same center");
+                  System.out.println(": character support");
 
     System.out.println("Select option");
       int commonOption = input.nextInt();
   
      switch (commonOption){
-           case 1: System.out.println("-> Delivery reports");
+           case 1: System.out.println(": Delivery reports");
                 break;
-           case 2: System.out.println("-> Reply via same center");
+           case 2: System.out.println(": Reply via same center");
                 break;
-           case 3: System.out.println("-> character support");
+           case 3: System.out.println(": character support");
                 break;
-           default: System.out.println("-> Invalid");
+           default: System.out.println(": Invalid");
            }
                 break;
+         }
+        break;   
             
-            
-           case 4:  System.out.println("8. Info service");
+           case 8 :  System.out.println("8. Info service");
                 break;
-           case 5:  System.out.println("9. Voice mailbox number");
+           case 9 :  System.out.println("9. Voice mailbox number");
                 break;
-           case 6:  System.out.println("10. Service command editor");
+           case 10 :  System.out.println("10. Service command editor");
                 break;
            default: System.out.println("Invalid selection");
            }
+              break;
+               
+       
+          
+          case 3: System.out.println("CHAT\n");
+               break;
+          default: System.out.println("Invalid selection");
 
+              case 4: System.out.println("CALL REGISTER\n");
+                      System.out.println("1. Missed calls");
+                      System.out.println("2. Received calls");
+                      System.out.println("3. Dailed numbers");
+                      System.out.println("4. Erase recent call list");
+                      System.out.println("5. Show call duration ");
+                      System.out.println("6. Show call cost ");
+                      System.out.println("7. Call cost settings ");
+                      System.out.println("8. Prepaid credit");
+
+
+    System.out.println("Select option");
+      int callRegister = input.nextInt();
+
+       switch(callRegister){
+         case 1: System.out.println("-> Missed calls");
+              break;
+         case 2: System.out.println("->  Received calls");
+              break;
+         case 3:  System.out.println("-> Dailed numbers");
+              break;
+         case 4:  System.out.println("-> Erase recent call list");
+              break;
+         case 5:  System.out.println("-> Show call duration ");
+                  System.out.println("1: Last call duration");
+                  System.out.println("2: All call`s duration");
+                  System.out.println("3: Received calls` duration");
+                  System.out.println("4: Dailed calls` duration");
+                  System.out.println("5: Clear timers");
+
+    System.out.println("Select option");
+      int showCallduration = input.nextInt();
+
+        switch(showCallduration){
+
+         case 1: System.out.println("-> Last call duration");
+              break;
+         case 2: System.out.println("->  All call`s duration");
+              break;
+         case 3:  System.out.println("->Received calls` duration");
+              break;
+         case 4:  System.out.println("-> Dailed calls` duration");
+              break;
+         case 5:  System.out.println("-> Clear timers");
+              break;
+         
+         }
+              break;
+            
+          case 6:  System.out.println("-> Show call cost");
+                   System.out.println("1: Last call cost");
+                   System.out.println("2: All calls` cost");
+                   System.out.println("3: Clear counters");
+
+    System.out.println("Select option");
+      int  showCallcost = input.nextInt();
+      
+        switch(showCallcost){
+        
+         case 1: System.out.println("->  Last call cost");
+              break;
+         case 2: System.out.println("->  All calls’ cost");
+              break;
+         case 3:  System.out.println("-> Clear counters");
+              break;
+         default: System.out.println("Invalid selection");  
+         }
+              break;
+
+          case 7:  System.out.println("-> Call cost setting");
+                   System.out.println("1: Call cost limit");
+                   System.out.println("2: Show costs in");
+
+     System.out.println("Select option");
+      int  callCostset = input.nextInt();
+         
+        switch(callCostset){
+
+         case 1: System.out.println("-> Call cost limit");
+              break;
+         case 2: System.out.println("->  Show costs in");
+              break;
+          default: System.out.println("Invalid selection"); 
+          }
+              break;
+   
+            
+          case 8:  System.out.println("8. Info service");
+               break;
+          default: System.out.println("Invalid selection");
+
+           }
+               break;
+            
+           
+              case 5: System.out.println("TONES\n");
+                      System.out.println("1. Ringing tone");
+                      System.out.println("2. Ringing volume");
+                      System.out.println("3. Incoming call alert");
+                      System.out.println("4. Composer");
+                      System.out.println("5. Message alert tone");
+                      System.out.println("6. Keypad tones");
+                      System.out.println("7. Warning and game tones");
+                      System.out.println("8. Vibrating alert");
+                      System.out.println("9. Screen saver");  
+
+
+   System.out.println("Select options :");
+     int tones = input.nextInt();
+
+      switch(tones){
+         case 1: System.out.println("->  Ringing tone");
+              break;
+         case 2: System.out.println("->  Ringing volume");
+              break;
+         case 3:  System.out.println("-> Incoming call alert");
+              break;
+         case 4:  System.out.println("-> Composer");
+              break;
+         case 5:  System.out.println("->  Message alert tone");
+              break;
+         case 6:  System.out.println("-> Keypad tones");
+              break;
+         case 7:  System.out.println("-> Warning and game tones");
+              break;
+         case 8:  System.out.println("->  Vibrating alert");
+              break;
+         case 9:  System.out.println("-> Screen saver");
+              break;
+         default: System.out.println("invalid selections");
+         }
+              break;
+
+
+              case 6: System.out.println("SETTINGS\n");
+                      System.out.println("1. Call settings");
+                      System.out.println("2. Phone settings");
+                      System.out.println("3. Security settings");
+                      System.out.println("4. Restore factory settings");
+                      
+
+
+    System.out.println("Select options :");
+     int settings = input.nextInt();
+      
+       switch(settings){
+           
+          case 1: System.out.println("-> Call settings"); 
+                  System.out.println("1. Automatic redial");
+                  System.out.println("2. Speed dialling");
+                  System.out.println("3. Call waiting options");
+                  System.out.println("4. Own number sending");
+                  System.out.println("5. Phone line in use");
+                  System.out.println("6. Automatic answer");
+
+   System.out.println("Select options :");
+     int callSettings = input.nextInt();
+   
+         switch(callSettings){
+    
+         case 1: System.out.println("->  Automatic redial");
+              break;
+         case 2: System.out.println("->  Speed dialling");
+              break;
+         case 3:  System.out.println("-> Call waiting options");
+              break;
+         case 4:  System.out.println("-> Own number sending");
+              break;
+         case 5:  System.out.println("-> Phone line in use");
+              break;
+         case 6:  System.out.println("-> Automatic answer");
+              break;
+         default: System.out.println("Invalid selection");
+
+         }
+              break;
+  
+          case 2: System.out.println("-> Phone setting"); 
+                  System.out.println("1. Language");
+                  System.out.println("2. Cell info display");
+                  System.out.println("3. Welcome note");
+                  System.out.println("4. Network selection");
+                  System.out.println("5. Lights");
+                  System.out.println("6. Confirm SIM service actions");
+
+
+     
+   System.out.println("Select options :");
+     int phoneSetting = input.nextInt();
+
+         switch(phoneSetting){
+          
+          
+         case 1: System.out.println("->  Language");
+              break;
+         case 2: System.out.println("->  Cell info display");
+              break;
+         case 3:  System.out.println("-> Welcome note");
+              break;
+         case 4:  System.out.println("-> Network selection");
+              break;
+         case 5:  System.out.println("-> Lights");
+              break;
+         case 6:  System.out.println("-> Confirm SIM service actions");
+              break;
+         default: System.out.println("Invalid selection");
+
+          }
+              break;
+        
+     
+          case 3: System.out.println("-> Security settings "); 
+                  System.out.println("1. PIN code request");
+                  System.out.println("2. Call barring service");
+                  System.out.println("3. Fixed dailing");
+                  System.out.println("4. Closed user group");
+                  System.out.println("5. Phone security");
+                  System.out.println("6. Change access codes"); 
+
+
+
+     System.out.println("Select options :");
+     int securitySetting = input.nextInt();
+
+          switch(securitySetting){
+   
+    
+         case 1: System.out.println("->  PIN code request");
+              break;
+         case 2: System.out.println("->  Call barring service");
+              break;
+         case 3:  System.out.println("->  Fixed dailing");
+              break;
+         case 4:  System.out.println("->  Closed user group");
+              break;
+         case 5:  System.out.println("->  Phone security");
+              break;
+         case 6:  System.out.println("-> Change access codes");
+              break;
+         default: System.out.println("Invalid selection");
+
+          }
+              break;
+
+
+          
+     
+          case 4: System.out.println("-> Retore factory settings");
+               break;
+          default: System.out.println("Invalid selection");
+
+           }
+               break;
+    
+            case 7: System.out.println("-> Call divert");
+                break;
+            case 8: System.out.println("-> Games");
+                break;
+            case 9: System.out.println("-> Calculator");
+                break;
+            case 10: System.out.println("-> Reminders");
+                break;
+            case 11: System.out.println("-> Clock");
+                     System.out.println("1. Alarm clock");
+                     System.out.println("2. Clock settings");
+                     System.out.println("3. Date settings ");
+                     System.out.println("4. Stopwatch");
+                     System.out.println("5. Countdown timer");
+                     System.out.println("6. Auto update of date and time");
+
+
+   System.out.println("Select options :");
+     int clockSet = input.nextInt();
+
+         switch(clockSet){
+  
+         case 1: System.out.println("->   Alarm clock");
+              break;
+         case 2: System.out.println("->   Clock settings");
+              break;
+         case 3:  System.out.println("->  Date settings");
+              break;
+         case 4:  System.out.println("->  Stopwatch");
+              break;
+         case 5:  System.out.println("->  Countdown timer");
+              break;
+         case 6:  System.out.println("-> Auto update of date and time");
+              break;
+         default: System.out.println("Invalid selection");
+
+         }
+              break;
+
+      
+         case 12:  System.out.println("->  Profile");
+              break;
+         case 13:  System.out.println("-> SIM services");
+              break;
+//         default: System.out.println("Invalid selection"); 
+ 
+   
+
+          
+
+
+           
+
+                  
          
 
                   
@@ -200,4 +520,4 @@ public class Nokiaphone{
    }
 
 
-}
+
