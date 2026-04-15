@@ -474,47 +474,15 @@ public class Nokiaphone{
               break;
          case 13:  System.out.println("-> SIM services");
               break;
-//         default: System.out.println("Invalid selection"); 
- 
-   
-
-          
-
-
-           
-
-                  
-         
-
-                  
-                 
-               
-  
-             
-
-
-}
-
-
 
   
-          
 
-                 
-
-                 
-
-
-
-               
-                       
-            
+             }
+                              
         
 
-
-}     
+        }     
   
-
 
    
    }
