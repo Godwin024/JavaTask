@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TaskOne{
+public class TaskThree{
 
    public static void main(String[] args){
 
@@ -8,21 +8,26 @@ public class TaskOne{
 
      
         int sum = 0;
+        int counter = 0;
+        double average = 0;
 
          for(int count =1; count <=10; count++){
              System.out.println("Enter the score:" + count);
 
                int score= inputCollector.nextInt();
-             sum += score;
+                  sum += score;
+                  counter = counter+1;
+                  
+              
                
 
-             }
-
-             System.out.println(" your total score is:" + sum);
+     }
+              average = sum / counter;
+             System.out.println("Your sum: " + sum + " Your average score is: "+ average);
 
  
 
-      }
+   }
 
 
 
