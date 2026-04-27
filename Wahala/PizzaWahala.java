@@ -24,17 +24,56 @@ public class PizzaWahala{
 
                         
         System.out.println("Enter the number of guest: ");
-
-        int userinput = inputCollector.nextInt();
+        int guestNumber = inputCollector.nextInt();
         
         System.out.println("Enter your choice of  pizza type : ");
         int pizzaType = inputCollector.nextInt();
 
-        System.out.println("Enter the  selected price of your pizza type: ");
-        int pricePerbox = inputCollector.nextInt();
+        System.out.println("Enter your numbers of pack:");
+        int pizzaPack =  inputCollector.nextInt();
 
+        System.out.println("Enter the  selected price of your pizza type: ");
+        int priceBbox = inputCollector.nextInt();
+
+        
+        
+      int totatlPrice = price(priceBbox, pizzaPack ) ;
+      int  pizzaTypeType =  totalPizza (pizzaType, pizzaPack);
+      int remainingSlice =  slice (pizzaTypeType, guestNumber ); 
+    
+        
+       
+        
+
+        System.out.println("Your total price " +  totatlPrice);
+        System.out.println("Your total number of packs:" +  pizzaTypeType);
+        System.out.println("Your remaining slices are:" + remainingSlice);
+
+        
+
+
+            
 
     }
+
+    public static int price (int priceBbox, int pizzaPack ){
+            return priceBbox * pizzaPack;
+    }
+
+    public static int totalPizza(int priceBbox, int pizzaPack ){ 
+            return priceBbox * pizzaPack;
+
+           
+        
+    }
+
+    public static int slice(int pizzaTypeType, int guestNumber){
+            return pizzaTypeType - guestNumber;
+
+    
+    }
+    
+
 
 
 
