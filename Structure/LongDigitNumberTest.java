@@ -11,14 +11,6 @@ public class LongDigitNumberTest{
         long actual = LongDigitNumber.sumDigits(number);
         assertEquals(expected, actual);
 
-
-
-
     }
-
-
-
-
-
 
 }

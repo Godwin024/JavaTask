@@ -23,7 +23,6 @@ public class LongDigitNumber{
 
                 sumOfNumber += number %10;
                 number /= 10;
-
                
                 }
 
